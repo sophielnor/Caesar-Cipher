@@ -37,4 +37,4 @@ Output: KHOOR
 
 ## 📜 License
 
-This project is open source and free to use.0
+This project is open source and free to use.
