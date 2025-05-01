@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> .active {
+      color: blue;
+  }</style>
+  </head>
+  <body class="bg-teal-100">
+    <div class="bg-white">
+    <h1 class="text-sky-500 text-4xl font-medium pt-10 pb-5 text-center shadow-teal-800">Caesar Cipher</h1>
+  </div>
+
+    <form id="encode and decode" class="flex flex-col sm:flex-row sm:m-20 p-2">
+
+      <div id="input" class="grow margin-5px sm:mx-[70px] text-2xl border-4 border-sky-300 rounded-md bg-white">
+        <p class="text-3xl text-center mt-5">Input text</p>
+        <br><textarea
+          id="inputtext"
+          placeholder="Lorem Ipsum"
+          autofocus
+          class="h-auto w-full sm:p-2 border-t-2 border-t-sky-300"
+          rows="8"
+        ></textarea>
+      </div>
+        <!-- placeholder="1"  -->
+      <div id="coding" class="grow margin-5px sm:margin-20px text-2xl text-center text-2xl border-4 border-sky-300 rounded-md bg-white">
+        <p class="text-3xl text-center mt-5">Shift</p><br>
+        <div id="coding" class="pt-2 border-t-2 border-sky-300">
+        <button type="button" id="encode" class="p-2 border-2 border-sky-300 w-[48%] active">Encode</button>
+        <button type="button" id="decode" class="p-2 border-2 border-sky-300 w-[49%]">Decode</button>
+      </div>
+
+        <div class="h-[8em] mx-70px p-2 flex flex-row justify-between h-auto w-full p-2 rounded-md bg-white">
+          <button type="button" id="plus" class="p-2 border-2 border-sky-300 h-1/2 active">+</button>
+        <p disabled id="operation" class="text-5xl text-gray-600 active" >+</p>
+        <input id="ciphervalue" type="number" min="0" max="26" 
+
+        value="1"
+        class="text-5xl w-[1.5em]">
+        <button type="button" id="minus" class="p-2 border-2 border-sky-300 h-1/2">-</button>
+      </div>
+      </div>
+      <div id="output" class="grow sm:mx-[70px] text-2xl border-4 border-sky-300 rounded-md bg-white">
+        <p class="text-3xl text-center mt-5">Output text</p>
+        <br><textarea
+          id="outputtext"
+          class="h-auto w-full p-2 border-t-2 border-t-sky-300"
+          rows="8"
+          disabled
+        ></textarea>
+      </div>
+    </form>
+    <p class="absolute bottom-6 left-6 font-md text-xl">By Sophie Norwood</p>
+  </body>
+  <script src="index.js"></script>
+</html>
